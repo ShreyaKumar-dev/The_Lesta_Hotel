@@ -291,15 +291,38 @@ html, body {
 }
 
 @media screen and (max-width:800px){
+    .landing-page{
+        border-radius: 5px;
+    }
+
+    .landing-text{
+        margin: 0;
+        /* padding: 0; */
+        padding-top: 30%;
+        text-align: center;
+        align-self: center;
+    }
+
+    .landing-text h1{
+        font-size: 100px;
+    }
+    
+    .landing-text p{
+        font-size: 24px;
+        letter-spacing: 3px;
+        margin: 0px;
+        padding: 0px 10px;
+    }
+
     .about-us-txt{
         flex-direction: column;
-        text-align: center;
+        align-items: center;
         gap: 20px;
     }
 
     .about-us-content{
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 20px;
     }
     
     .about-us-desc{
@@ -325,7 +348,11 @@ html, body {
     }
 
     .badge-sec1>p{
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+    .testimonial-txt>h1{
+        text-align: center;
     }
 }
 
