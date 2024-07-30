@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    overflow: hidden;
+}
+
+.navbar-strip{
+    background: #fff;
+}
+
+.navbar-nav{
+    justify-content: space-between;
+}
+
+.roombook-btn{
+    background-color: #000; /* #f8b400 */
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    letter-spacing: 0.5px;
+    word-spacing: 1.5px;
+    font-size: 15px;
+}
+
+.roombook-btn:hover{
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link{
+    color: #000;
+}
+
+.nav-link>span:hover{
+    border-bottom: 1.55px solid black;
+}
+
+/* .collapse{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.collapse button{
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 10px 30px;
+} */
+
+.landing{
+    margin-top: 90px;
+}
+
+.landing-page{
+    background-image: url(./asset/Hotel_Lobby.jpg);
+    height: 85dvh;
+    width: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.landing-text{
+    color: #ededed;
+    text-transform: uppercase;
+    margin-left: 60px;
+}
+
+.landing-text h1{
+    font-size: 135px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    font-family: "Playfair Display", serif;
+}
+
+.landing-text p{
+    font-size: 28px;
+    /* font-weight: 300; */
+    letter-spacing: 5px;
+    margin-left: 20px;
+    font-family: "Tenor Sans", sans-serif;
+}
+
+.about-us-txt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.roombook-btn2{
+    background-color: #000; /* #f8b400 */
+    color: #fff;
+    border: 1.5px solid #000;
+    border-radius: 30px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-family: "Nunito Sans", sans-serif;
+    transition: 0.1s ease-in-out;
+}
+
+.roombook-btn2:hover{
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.about-us-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+.badge-sec1{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.badge-sec1>p{
+    border: 1px solid #000;
+    padding: 5px 30px;
+    border-radius: 20px;
+}
+
+.about-us-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.img-sec1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img-sec1 img{
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-us-txt> h1{
+    font-family: "Playfair Display", serif;
+}
+
+.about-us-desc p{
+    font-size: 18px;
+    font-family: "Nunito Sans", sans-serif;
+    text-wrap: wrap;
+}
+
+.testimonial-txt>h1{
+    font-family: "Playfair Display", serif;
+    /* font-size: 100px; */
+}
+
+.testimonial-card{
+    /* background: #70500a; */
+    background: linear-gradient(160deg, #000, #70500a);
+    color: #ededed;
+}
+
+.testimonial-profile{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+}
+
+.testimonial-profile img{
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.testimonial-name p{
+    padding: 0;
+    margin: 0;
+}
+
+.testimonial-desc p{
+    font-size: 17px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.testimonial-name>p{
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.testimonial-name>.date{
+    color: #989797;
+    font-size: 16px;
+}
+
+.rating_profile_img> img{
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+}
+
+.rating{
+    display: flex;
+    flex-direction: row;
+    background: #ededed;
+    border-radius: 50px;
+    width: 420px;
+}
+
+.rating_profile_img{
+    border-right: 2px solid #bbbbbb;
+    margin-right: 20px;
+    position: relative;
+    width: 155px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_sec{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+}
+
+.rate_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.rate_container>.head{
+    font-size: 18px;
+    font-family: "Nunito Sans", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.rate_container>.head{
+    font-weight: 600;
+}
+
+.rate_container>.subtitle{
+    color: #5a5a5a;
+    letter-spacing: 0.5px;
+}
+
+.rate_container>.text,.subtitle{
+    font-size: 16px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.testimonial-txt>p{
+    font-size: 16px;
+    font-family: "Nunito Sans", sans-serif;
+    letter-spacing: 0.5px;
+    padding-left: 20px;
+}
+
+.testimonial-txt>p>span{
+    border-bottom: 1px solid #000;
+}
+
+.testimonial-txt>p>img{
+    margin-left: 10px;
+}
+
+@media screen and (max-width:800px){
+    .about-us-txt{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .about-us-content{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .about-us-desc{
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-us-img{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .img-sec1{
+        gap: 10px;
+    }
+
+    .badges{
+        align-items: center;
+    }
+}
+
+
+
+
