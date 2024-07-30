@@ -305,7 +305,7 @@ html, body {
     .about-us-desc{
         flex-wrap: wrap;
         align-items: center;
-        text-align: center;
+        text-align: justify;
     }
 
     .about-us-img{
